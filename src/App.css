@@ -2,6 +2,12 @@
   height: 100%;
 }
 
+header {
+  background-color: #DDDDDD;
+  padding: 20px;
+  height: 25%;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -84,5 +90,3 @@ main {
 .feature__selected {
   background: #DEDEDE;
 }
-
-

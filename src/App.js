@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import Header from './Header/Header';
-import Main from './Main/Main';
+import FeaturesList from './FeaturesList/FeaturesList';
+import Summary from './Summary/Summary';
+import STORE from './Store';
 import './App.css';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
+      STORE,
       selected: {
         Processor: {
             name: '17th Generation Intel Core HB (7 Core with donut spare)',
@@ -39,8 +41,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />      
-        <Main />
+        <header>
+          <h1>ELF Computing</h1>
+          <h3>Laptops</h3>
+          <h5>Customize your laptop</h5>  
+        </header>
+        <main>      
+          <FeaturesList 
+            features={this.state.STORE.FEATURES}
+            selected={this.state.selected}
+            onSelect={this.state.updateFeature}
+           />
+          <Summary 
+            selected={this.state.selected}
+           />
+        </main>
       </div>
     );
   }
