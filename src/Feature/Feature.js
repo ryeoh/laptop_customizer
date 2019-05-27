@@ -10,7 +10,7 @@ export default class Feature extends Component {
                 <li key={index} className="feature__item">
                 <div 
                     className={featureClass}
-                    onClick={e => this.props.onSelect(this.props.name, this.props.selected)}>
+                    onClick={e => this.props.onSelect(this.props.name, this.props.features[this.props.name][index])}>
                     { item.name }
                     ({ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'})
                       .format(item.cost) })
@@ -18,7 +18,6 @@ export default class Feature extends Component {
               </li>
             )
         });    
-
         return (
             <div className="feature" key={this.props.name}>
                 <div className="feature__name">{this.props.name}</div>

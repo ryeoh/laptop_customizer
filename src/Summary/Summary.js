@@ -9,7 +9,8 @@ export default class Summary extends Component {
               .map(key => 
               <Selections 
                 selected={this.props.selected} 
-                objectKey={key} />)
+                name={key} 
+                key={key} />)
         return (
             <section className="main__summary">
                 <h3>NEW GREENLEAF 2018</h3>

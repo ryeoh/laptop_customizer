@@ -50,7 +50,7 @@ class App extends Component {
           <FeaturesList 
             features={this.state.STORE.FEATURES}
             selected={this.state.selected}
-            onSelect={this.updateFeature}
+            onSelect={(features, newValue) => this.updateFeature(features, newValue)}
            />
           <Summary 
             selected={this.state.selected}

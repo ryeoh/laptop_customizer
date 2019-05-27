@@ -11,10 +11,9 @@ export default class FeaturesList extends Component {
                 selected={this.props.selected} 
                 key={key}
                 name={key}
-                onSelect={this.props.updateFeature}
+                onSelect={this.props.onSelect}
              />
           );      
-
         return (
             <section className="main__form">
                 <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
