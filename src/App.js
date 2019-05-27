@@ -30,9 +30,9 @@ class App extends Component {
     }
   }
 
-  updateFeature(feature, newValue) {
+  updateFeature(features, newValue) {
     const selected = Object.assign({}, this.state.selected);
-    selected[feature] = newValue;
+    selected[features] = newValue;
     this.setState({
       selected
     });
@@ -50,7 +50,7 @@ class App extends Component {
           <FeaturesList 
             features={this.state.STORE.FEATURES}
             selected={this.state.selected}
-            onSelect={this.state.updateFeature}
+            onSelect={this.updateFeature}
            />
           <Summary 
             selected={this.state.selected}

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Feature from '../Feature/Feature';
+import './FeaturesList.css';
 
 export default class FeaturesList extends Component {
     render() {
@@ -10,7 +11,7 @@ export default class FeaturesList extends Component {
                 selected={this.props.selected} 
                 key={key}
                 name={key}
-                onSelect={this.props.onSelect}
+                onSelect={this.props.updateFeature}
              />
           );      
 

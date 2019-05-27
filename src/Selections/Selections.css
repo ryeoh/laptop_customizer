@@ -1,0 +1,14 @@
+.summary__option__label {
+    font-weight: bold;
+    grid-area: key
+  }
+  
+  .summary__option__value {
+    grid-area: value;
+    color: lightblue;
+  }
+  
+  .summary__option__cost {
+    grid-area: cost;
+    text-align: right;
+  }

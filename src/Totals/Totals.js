@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Totals.css';
 
 export default class Totals extends Component {
     render () {

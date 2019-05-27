@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    padding: 15px;
+  }
+  
+  .main__form {
+    flex: 5;
+    padding: 4px;
+  }
+
+  .feature__list {
+    list-style: none;
+  }

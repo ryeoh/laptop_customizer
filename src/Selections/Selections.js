@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Selections.css';
 
 export default class Selections extends Component {
     render() {

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Feature.css';
 
 export default class Feature extends Component {
     render() {
@@ -9,7 +10,7 @@ export default class Feature extends Component {
                 <li key={index} className="feature__item">
                 <div 
                     className={featureClass}
-                    onClick={e => this.props.onSelect(this.props.name, item)}>
+                    onClick={e => this.props.onSelect(this.props.name, this.props.selected)}>
                     { item.name }
                     ({ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'})
                       .format(item.cost) })
